@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class = "container">
+            <a href="/home/{{user}}" class="navbar-brand">
+                <img src="/static/Monolith.png">
+            </a>
+
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home/{{user}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dataset/{{user}}" class="nav-link">Datasets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects/{{user}}/View or create projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/my-proj/{{user}}/View your projects" class="nav-link">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/myaccount/{{user}}" class="nav-link">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/{{user}}" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout/{{user}}" class="nav-link">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cbody">
+        <h1>Datasets</h1>
+        <p>Use these datasets to prepare for using actual hardware sets. All datasets are obtained from physionet.org.</p>
+    </div>
+    <div class="data-table">
+    <hr/>
+    <table class = "table"  >
+
+
+        <thead class='data-head'>
+            <tr>
+                <th>Dataset Name</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>Abdominal and Direct Fetal ECG Database</td>
+                <td><a href="https://physionet.org/static/published-projects/adfecgdb/abdominal-and-direct-fetal-ecg-database-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>AF Termination Challenge Database</td>
+                <td><a href="https://physionet.org/static/published-projects/aftdb/af-termination-challenge-database-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>AHA Database Sample Excluded Record</td>
+                <td><a href="https://physionet.org/static/published-projects/ahadb/aha-database-sample-excluded-record-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>ANSI/AAMI EC13 Test Waveforms</td>
+                <td><a href="https://physionet.org/static/published-projects/aami-ec13/ansiaami-ec13-test-waveforms-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Blood Pressure in Salt-Sensitive Dahl Rats</td>
+                <td><a href="https://physionet.org/static/published-projects/bpssrat/blood-pressure-in-salt-sensitive-dahl-rats-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+
+
+            <tr>
+                <td>ECG-ID Database</td>
+                <td><a href="https://physionet.org/static/published-projects/ecgiddb/ecg-id-database-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>EEG Signals from an RSVP Task</td>
+                <td><a href="https://physionet.org/static/published-projects/ltrsvp/eeg-signals-from-an-rsvp-task-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Long-term Recordings of Gait Dynamics</td>
+                <td><a href="https://physionet.org/static/published-projects/umwdb/long-term-recordings-of-gait-dynamics-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Long Term ST Database</td>
+                <td><a href="https://physionet.org/static/published-projects/ltstdb/long-term-st-database-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Samples of MR Images</td>
+                <td><a href="https://physionet.org/static/published-projects/images/samples-of-mr-images-1.0.0.zip">Download ZIP</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous">
+</script>
+    </div>
+</body>
+</html>

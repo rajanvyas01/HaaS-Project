@@ -1,0 +1,159 @@
+
+/* General */
+
+.cbody{ /*center body*/
+    text-align-last: center;
+    padding-top: 10px;
+}
+
+.lbody {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+hr {
+    border: 1px solid #dad7d7;
+    margin-bottom: 25px;
+}
+
+#background_test {      /*not implemented yet */
+    background-image: linear-gradient(to bottom rgb(43, 43, 247), white) !important;
+}
+
+body {
+    background-color: rgb(231, 202, 163);
+}
+
+
+/* dataset stuff (HWset + dataset) */
+.data-table {
+    box-shadow: 0 0 10px rgba(0,0,0, 0.15);
+    font-family: sans-serif;
+    table-layout: auto;
+    width: 100%;
+    margin: 8px 0;
+}
+
+
+.data-table thead {
+    background-color: navy;
+    color: #ffffff;
+    text-align: left;
+}
+
+.data-table tbody tr {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+tfoot {
+    border-bottom: 12px solid navy;
+}
+
+.data-table td {
+    color:black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.data-table input[type=submit] {
+    cursor: pointer;
+    border: none;
+    background: #04AA6D;
+    color: white;
+    opacity: 0.9;
+}
+
+tr {
+    
+    border-bottom: thin solid black;
+    border-top: thin solid black; 
+}
+
+
+/* myaccount stuff. Need more direction on page for more stuff. */
+h1.myaccount {
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+}
+
+a.myaccount {
+    color: red;
+    padding: 20px;
+}
+
+
+/* Projects */
+
+.project {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 20px 0 20px 0;
+    border-radius: 4px;
+}
+
+.project input[type=text] {
+    display: inline-block;
+    border: 1px black;
+    background: #dadada;
+}
+
+.project div {
+    padding: 1px;
+}
+
+.project input[type=text]:focus {
+    background-color: rgb(197, 197, 197);
+}
+
+
+
+.ab {
+    text-align: center;
+}
+
+.abi {
+
+    margin: auto;    
+    display: block;
+}
+
+
+.project input[type=submit] {
+    cursor: pointer;
+    border: none;
+    background: #04AA6D;
+    color: white;
+    opacity: 0.9;
+}
+
+.project input[type=submit]:hover {
+    opacity: 1;
+}
+
+.project h5 {
+    font-weight: bold;
+}
+
+
+
+/*Setmanage*/
+.setmanage input[type=submit] {
+    cursor: pointer;
+    border: none;
+    background: #04AA6D;
+    color: white;
+    opacity: 0.9;
+    width: 8em;
+    height: 2em;
+}
+
+.setmanage input[type=submit]:hover {
+    opacity: 100;
+}
+
+.setmanage h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
